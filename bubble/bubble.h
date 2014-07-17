@@ -25,6 +25,8 @@ typedef int (bubble_cmp_proc_t)( const void *p1, const void *p2 );
 /** Sort array with \a nmemb elements of size \a size.
  * The contents of the array are sorted in ascending order according to a
  * comparison function.
+ * Time complexity: n^2
+ * In-place: no
  *
  * @param base Start of the array.
  * @param nmemb Number of elements in the array.
