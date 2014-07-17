@@ -34,14 +34,14 @@ void bubblesort( void *base, unsigned int nmemb, unsigned int size, const bubble
 		char *q = p + size;
 		while( q < e ) {
 			if( 0 > (*compar)(p, q) ) {
-				unsigned int l = size;
+				unsigned int s = size;
 				char *a = p;
 				char *b = q;
 				do {
 					char t = *a;
 					*(a++) = *b;
 					*(b++) = t;
-				} while( 0 < --l );
+				} while( 0 < --s );
 			}
 			q += size;
 		}
